@@ -13,9 +13,6 @@ on:
   pull_request:
     branches: [ "1.19", "1.19.3-migration", "1.19.4-migration","action" ]
 
-permissions:
-  contents: read
-
 jobs:
   build:
 
