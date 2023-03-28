@@ -30,11 +30,11 @@ jobs:
         distribution: 'temurin'
         cache: 'gradle'
     - name: Setup
-      run: cd fabric 
+      run: "cd fabric"
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Run build with Gradle Wrapper
-      run: gradle build
+      run: "../gradlew build"
     - name: Auto Release
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
